@@ -66,7 +66,7 @@ abstract class DOM implements Query, \IteratorAggregate, \Countable
      * @see qp()
      * @throws Exception
      */
-    public function __construct($document = NULL, $string = NULL, $options = [])
+    public function __construct($document = NULL, $string = '', $options = [])
     {
         $string = trim($string);
         $this->options = $options + Options::get() + $this->options;
